@@ -273,28 +273,28 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp LCLK  &mo 4             &mkp RCLK  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp RG(LEFT_BRACKET)  &mkp MB1   &mkp MB3          &mkp MB2   &kp RG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &kp LC(UP_ARROW)  &trans     &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans            &trans     &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                 &mkp LCLK  &mo 4             &mkp RCLK  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp RG(RIGHT_BRACKET)  &mkp MB1   &mkp MB3          &mkp MB2   &kp RG(BACKSLASH)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                 &trans     &kp LC(UP_ARROW)  &trans     &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans            &trans     &trans             &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp N1            &kp N2             &kp N3          &kp N4      &kp N5     &kp N6     &kp N7         &kp N8     &kp N9                &kp N0                 &kp DELETE
-&trans      &kp EXCL          &kp AT             &kp HASH        &kp DOLLAR  &kp PRCNT  &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp APOSTROPHE  &trans      &trans     &trans     &trans         &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH
-&trans      &trans            &trans             &trans          &trans      &trans     &trans     &trans         &trans     &trans                &trans                 &trans
+&kp ESCAPE  &kp N1     &kp N2      &kp N3         &kp N4      &kp N5     &kp N6     &kp N7   &kp N8        &kp N9      &kp N0      &kp DELETE
+&trans      &kp EXCL   &jp_at      &kp HASH       &kp DOLLAR  &kp PRCNT  &jp_caret  &jp_amp  &jp_asterisk  &jp_lparen  &jp_rparen  &trans
+&trans      &jp_quote  &jp_dquote  &jp_backquote  &trans      &trans     &trans     &trans   &jp_tilde     &jp_lbrace  &jp_rbrace  &jp_lbracket  &jp_rbracket  &kp SLASH
+&trans      &trans     &trans      &trans         &trans      &trans     &trans     &trans   &trans        &trans      &trans      &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      &trans          &kp FSLH  &kp ASTRK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &kp HOME        &trans    &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans        &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &bt BT_CLR_ALL  &trans    &kp END    &trans           &kp GRAVE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans          &trans    &trans     &kp KP_NUMBER_0  &kp DOT          &kp EQUAL
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      &trans          &kp FSLH  &jp_asterisk  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &kp HOME        &trans    &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans        &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &bt BT_CLR_ALL  &trans    &kp END       &trans           &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans          &trans    &trans        &kp KP_NUMBER_0  &kp DOT          &jp_equal
             >;
         };
 
@@ -309,10 +309,10 @@
 
         layer_5 {
             bindings = <
-&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6         &kp F7     &kp F8          &kp F9         &kp F10        &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON  &jp_colon  &jp_underscore  &jp_equal      &jp_plus       &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans         &trans     &jp_pipe        &jp_backslash  &kp LESS_THAN  &kp GREATER_THAN  &jp_yen  &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans          &trans         &trans         &trans
             >;
         };
 
