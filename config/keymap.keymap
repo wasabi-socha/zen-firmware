@@ -15,6 +15,250 @@
         };
     };
 
+    macros {
+        jp_dquote: jp_dquote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp AT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp AT>;
+        };
+
+        jp_amp: jp_amp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CARET>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp CARET>;
+        };
+
+        jp_quote: jp_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp AMPERSAND>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp AMPERSAND>;
+        };
+
+        jp_equal: jp_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp UNDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp UNDER>;
+        };
+
+        jp_caret: jp_caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp EQUAL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp EQUAL>;
+        };
+
+        jp_yen: jp_yen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp INT_YEN>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp INT_YEN>;
+        };
+
+        jp_plus: jp_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp COLON>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp COLON>;
+        };
+
+        jp_tilde: jp_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp PLUS>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp PLUS>;
+        };
+
+        jp_pipe: jp_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(INT_YEN)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LS(INT_YEN)>;
+        };
+
+        jp_at: jp_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_BRACKET>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_BRACKET>;
+        };
+
+        jp_colon: jp_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SINGLE_QUOTE>;
+        };
+
+        jp_asterisk: jp_asterisk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp DOUBLE_QUOTES>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp DOUBLE_QUOTES>;
+        };
+
+        jp_backquote: jp_backquote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_BRACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_BRACE>;
+        };
+
+        jp_underscore: jp_underscore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(INT_RO)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LS(INT_RO)>;
+        };
+
+        jp_backslash: jp_backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp INT_RO>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp INT_RO>;
+        };
+
+        jp_lbracket: jp_lbracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RIGHT_BRACKET>;
+        };
+
+        jp_rbracket: jp_rbracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp BACKSLASH>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp BACKSLASH>;
+        };
+
+        jp_lparen: jp_lparen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp ASTERISK>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp ASTERISK>;
+        };
+
+        jp_rparen: jp_rparen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_PARENTHESIS>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_PARENTHESIS>;
+        };
+
+        jp_lbrace: jp_lbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_BRACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RIGHT_BRACE>;
+        };
+
+        jp_rbrace: jp_rbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp PIPE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp PIPE>;
+        };
+
+        jp_hanzen: jp_hanzen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GRAVE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp GRAVE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
