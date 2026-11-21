@@ -4,8 +4,7 @@
 
 &pointing_listener {
     input-processors =
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 500>;
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
     scroller {
         layers = <4>;
@@ -19,13 +18,4 @@
 
 &zen_transform {
     col-offset = <7>;
-};
-
-// タイピング中にトラックボール/トラックパッドへ触れてマウスレイヤーが誤発動するのを防ぐ
-&zip_temp_layer {
-    // 最後の打鍵から400msはマウスレイヤーに切り替えない(カーソル移動はする)
-    require-prior-idle-ms = <400>;
-    // マウスレイヤー中に押しても解除しないキー(クリック類・Shift/Ctrl/Win/Alt)
-    // それ以外のキーを押すと通常レイヤーへ即戻る
-    excluded-positions = <7 8 9 18 19 20 21 22 32 24 37 38 39 40>;
 };
